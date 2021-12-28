@@ -1,10 +1,9 @@
 package hello.core;
 
-import hello.core.Order.AppConfig;
+import hello.core.order.AppConfig;
 import hello.core.member.Grade;
 import hello.core.member.Member;
 import hello.core.member.MemberService;
-import hello.core.member.MemberServiceImpl;
 
 public class MemberApp {
 

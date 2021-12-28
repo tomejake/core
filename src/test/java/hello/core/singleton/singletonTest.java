@@ -1,13 +1,11 @@
 package hello.core.singleton;
 
-import hello.core.Order.AppConfig;
+import hello.core.order.AppConfig;
 import hello.core.member.MemberService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import java.io.ObjectInputFilter;
 
 public class singletonTest {
     @Test
