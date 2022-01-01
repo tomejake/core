@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 public class BeanLifeCycleTest {
 
@@ -14,7 +15,8 @@ public class BeanLifeCycleTest {
         ac.close();
     }
 
-    public class LifeCycleConfig{
+    @Configuration
+    static class LifeCycleConfig {
 
         @Bean
         public NetworkClient networkClient(){
