@@ -18,8 +18,9 @@ public class LogDemoController {
     @RequestMapping("log-demo")
     @ResponseBody
     public String logDemo(HttpServletRequest request){
-        String requestURI = request.getRequestURI();
+        String requestURI = request.getRequestURI().toString();
         myLogger.setRequestURL(requestURI);
+
         myLogger.log("controller test");
         logDemoService.logic("testId");
         return "OK";
